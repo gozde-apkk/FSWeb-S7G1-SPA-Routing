@@ -7,7 +7,9 @@ import App from './App';
 
 // Routeların çalışması için <App /> öğesini düzenlemeniz gerekir
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <App />
-);
+ReactDOM.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.getElementById('root'),
+  );
